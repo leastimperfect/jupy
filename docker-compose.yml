@@ -1,7 +1,7 @@
 services:
   jupy:
-    image: jupyter/tensorflow-notebook
-
+    # image: jupyter/tensorflow-notebook:ubuntu-20.04
+    build: .
     ports:
       - "8888:8888"
     volumes:
